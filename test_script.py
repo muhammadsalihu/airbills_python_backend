@@ -1,15 +1,10 @@
-import anthropic
+import requests
 
- # defaults to os.environ.get("ANTHROPIC_API_KEY")
-client = anthropic.Anthropic()
-   
-   
+url = "https://airbills-python-backend.onrender.com"
 
-message = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
-    max_tokens=1024,
-    messages=[
-        {"role": "user", "content": "Hello, Claude"}
-    ]
-)
-print(message.content)
+try:
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an error for bad status codes
+    print("Response JSON:", response.json())
+except requests.exceptions.RequestException as e:
+    print("Request failed:", e)

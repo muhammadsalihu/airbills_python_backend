@@ -24,7 +24,8 @@ async def chat_with_claude():
             {"role": "user", "content": "Hello, Claude"}
         ]
     )
-    print(message.content)
+    return {"message": message.content}
+  
 
 
 @app.get("/")
