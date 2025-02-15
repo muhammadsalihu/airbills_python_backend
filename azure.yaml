@@ -1,0 +1,5 @@
+app:
+  name: airbills
+  runtime: python|3.11
+  resource_group: AirbillsResourceGroup
+  service_plan: AirbillsPlan
