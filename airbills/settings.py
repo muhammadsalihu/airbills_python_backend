@@ -25,7 +25,7 @@ SECRET_KEY = 'your-secret-key-here'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ["airbills-python-backend.onrender.com", "localhost", "127.0.0.1", "airbills-backend.azurewebsites.net"]
+ALLOWED_HOSTS = ["airbills-python-backend.onrender.com", "localhost", "127.0.0.1", "https://airbills.azurewebsites.net/"]
 
 # Application definition
 
