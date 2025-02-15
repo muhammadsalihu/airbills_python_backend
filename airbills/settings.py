@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Add your apps here
     'chat',
-    # 'django.contrib.staticfiles'
     'drf_yasg',
 ]
 
