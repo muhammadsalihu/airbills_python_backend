@@ -1,0 +1,14 @@
+*.pyc
+__pycache__
+staticfiles
+local_settings.py
+*.sqlite3
+.env
+
+# Ignore virtual environment
+venv/
+
+
+
+# Ignore database (if using SQLite)
+db.sqlite3

@@ -1,0 +1,7 @@
+# azure.yaml
+name: myproject
+services:
+  - name: web
+    project: .
+    language: python
+    host: appservice
